@@ -1,6 +1,12 @@
 # enqvist-structure-from-motion
 Non-Sequential  structure from motion following the paper by [Enqvist et al](http://www1.maths.lth.se/matematiklth/vision/publdb/reports/pdf/enqvist-kahl-etal-wovcnnc-11.pdf)
 
+## Download the data set
+```
+cd data
+./download.sh
+```
+
 ## Pipeline Outline (taken from Enqvist et al)
 1. Feature extraction using SIFT and matching between pairs of views
 2. Estimation of relative orientation for pairs of views. (5-point solver used in RANSAC combination with bundle adjustment)
